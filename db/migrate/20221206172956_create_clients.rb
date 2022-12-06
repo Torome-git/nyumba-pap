@@ -6,7 +6,6 @@ class CreateClients < ActiveRecord::Migration[7.0]
       t.integer :price
       t.integer :contact
       t.string :img_url
-      t.string :Apartments
 
       t.timestamps
     end
