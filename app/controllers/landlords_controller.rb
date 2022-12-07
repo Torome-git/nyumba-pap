@@ -4,6 +4,11 @@ class LandlordsController < ApplicationController
         render json: Landlord.all
     end
 
+    def show
+        landlord = Landlord.find_by(id: params[:id])
+        render json: landlord
+    end
+
     def create
         landlord = Landlord.create(landlord_params)
         render json: landlord
@@ -32,6 +37,6 @@ class LandlordsController < ApplicationController
     private
 
     def landlord_params
-        params.permit(:rooms, :location, :price, :contact :img_url)
+        params.permit(:rooms, :location, :price, :contact, :img_url)
     end
 end

@@ -1,3 +1,3 @@
 class LandlordSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :rooms
 end
