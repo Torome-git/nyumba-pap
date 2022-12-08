@@ -1,0 +1,15 @@
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background: white;
+    max-width: 500px;
+    width: 100%;
+    padding: 50px 60px;
+    border-radius: 5px;
+    box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+    font-family: 'Poppins',sans-serif;
+}
