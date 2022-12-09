@@ -28,13 +28,13 @@ https://torome.onrender.com
 ## HOW TO USE THE WEBSITE
 
 On page load the user will see the homepage with the homepage
-<img src="./src/assets/homepage.png">
+<img src="./client/src/assets/homepage.png">
 On the homepage if a user want to browse for apartments, he or she can sign up as a client , if he or she wants to post their apartment for rental services he or she can sign up as a client.
 
 ## LICENCE
 
 [MIT](LICENCE)
-Copyright (c) 2022 Jema Queenslay Naila
+Copyright (c) 2022 Torome Soila
 
 ## AUTHORS INFO
  Project is created by:
