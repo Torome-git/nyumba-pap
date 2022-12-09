@@ -1,9 +1,15 @@
 import React from "react";
 import LandlordsCard from "./landlordcard";
 
-function LandlordsContainer() {
+function LandlordsContainer(props) {
     return (
-        <LandlordsCard/>
+        <section>
+            <div className="apartments">
+                {props.landlords?
+                props.landlords.map(landlord=><LandlordsCard landlord={landlord} handleApartments={props.handleApartments}></LandlordsCard>)
+                :<p>login</p>}
+            </div>
+        </section>
     )
 }
 export default LandlordsContainer

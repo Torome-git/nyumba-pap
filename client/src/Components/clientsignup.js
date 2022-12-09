@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import {useNavigate} from "react-router-dom";
 import "../styles/clientsignup.css"
-function ClientSignUp() {
+function ClientSignUp({ onLogin}) {
     const navigate = useNavigate()
+    const [username, setUsername] = useState("");
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetch("/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ username })
+        })
+        .then((r) => r.json())
+        .then((user) => onLogin(user))
+    }
     return(
         <section className="main-section">
             <div className="main">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div class="input-group flex-nowrap">
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping"/>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" value={username} onChange={(e) => setUsername(e.target.value)}/>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>

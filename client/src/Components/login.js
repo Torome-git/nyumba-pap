@@ -77,7 +77,7 @@ function LogIn() {
                                 onClick={() => navigate("/clientsignup")}>Sign up here</a>
                             </p>
                         </div>
-                        <button type="submit" className="btn btn-dark">Login</button>
+                        <button type="submit" className="btn btn-dark" onClick={() => navigate("/apartmentscontainer")}>Login</button>
                     </form>
                 </div>
             </div>

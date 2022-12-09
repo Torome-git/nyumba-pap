@@ -1,6 +1,7 @@
 import React from "react";
 function ApartmentCard({ client }){
   const imageStyle = { width: "18rem"}
+  
 
     return(
         

@@ -1,11 +1,229 @@
-/* .container {
-    background: url('https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?cs=srgb&dl=pexels-martin-p%C3%A9chy-1866149.jpg&fm=jpg') center center/cover no-repeat;
-    height: calc(100vh - 80px);
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+  }
+ 
+  .buying-section {
+    width: 100vw;
+    height: auto;
+    margin-top: 100px;
+  }
+  .selling {
     width: 100%;
+    height: 90vh;
+    /*background-color: black;*/
+    background-image: url(https://trianum.co.ke/wp-content/uploads/slider/cache/e1b3bb6d988dd66666563e3647a2f4ce/5fb9095466b0f_home-banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
-} */
+  }
+  
+  .selling-right, .selling-left {
+      width: 100vh;
+      height: 100vh;
+  }
+  
+  .selling-right {
+    align-items: center;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .selling-right img {
+    height: auto;
+      width: 100%;
+  }
+  
+  .selling-left {
+    align-items: center;
+      display: flex;
+      justify-content: center;
+      /* gap: 30px; */
+  }
+  
+  .selling-inner-left {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .selling-inner-left p {
+      font-size: 18px;
+  }
+  .selling-inner-left h1 {
+      font-size: 42px;
+      font-weight: 900;
+  }
+  
+  .explore-more {
+    height: 50px;
+      width: 150px;
+      margin-top: 30px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      background-color: #dc3545;
+      font-weight: 900;
+      font-size: 18px;
+  }
+  
+  button.explore-more:hover {
+      background-color: black;
+  }
+  
+  .selling-bottom {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+      width: 100%;
+      height: auto;
+  }
+  
+  .selling-bottom-container {
+    height: 130px;
+      width: 45%;
+      background-color: white;
+      margin-top: -60px;
+      margin-bottom: 100px;
+      margin-right: -150px;
+      padding: 0 50px 0 50px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 5px;
+  }
+  .why-exist {
+    height: auto;
+      width: 100%;
+      margin: 0 0 100px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .why-left {
+    display: flex;
+    justify-content: center;
+    height: auto;
+      width: 100%;
+  
+  }
+  
+  .why-container {
+      width: 70%;
+  }
+  
+  .why-container h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+  }
+  
+  .why-container p {
+    line-height: 35px;
+      font-size: 18px;
+  }
+  
+  .why-container .horizontal-rule {
+    height: 3px;
+      width: 20%;
+      border: none;
+      background-color: #ED661F;
+  }
+  
+  .why-right {
+    height: auto;
+      width: 100%;
+  }
+  
+  .why-right img {
+    height: auto;
+      width: 70%;
+  }
+  /* .categories{
+    height: auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+ 
+  .product-categories {
+    width: 100%;
+    height: auto;
+      padding-top: 20px;
+      text-align: center;
+  }
+ 
+  h2.product-categories {
+    font-size: 30px;
+      text-align: center;
+      text-transform: capitalize;
+  }
+ 
+  p.product-categories {
+    text-align: center;
+    font-size: 18px;
+  }
+ 
+  .most-popular {
+    width: 90%;
+    height: auto;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+  }
+  .first-column{
+      width: 100%;
+      height: auto;
+  }
+  .first-column h2{
+      font-size: 23px;
+      font-weight: 700;
+  }
+  .first-column h2 hr{
+      width: 7%;
+      height: 3px;
+      border: none;
+      background-color: #ED661F;
+  }
+ 
+  .image{
+      display: grid;
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+      gap: 30px;
+ 
+  }
+ 
+  .image-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 0 30px 0;
+      align-items: center;
+  }
+ 
+  .image-card p{
+    margin: 5px 0 5px 0;
+      font-size: 14px;
+      text-align: left;
+  }
+ 
+  .image-card img{
+      width: 220px;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 4px;
+  }
+ .image-card p, h5, h6{
+   text-align: left;
+ } */
