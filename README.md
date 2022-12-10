@@ -27,6 +27,21 @@ https://torome.onrender.com
 
 ## HOW TO USE THE WEBSITE
 
+Run these commands first
+
+ ```
+ bundle install
+ rails db:reset
+ rails s
+
+```
+Then in another tab run the following for the frontend
+ ```
+ npm install --prefix client
+ npm start
+
+```
+
 On page load the user will see the homepage with the homepage
 <img src="./client/src/assets/homepage.png">
 On the homepage if a user want to browse for apartments, he or she can sign up as a client , if he or she wants to post their apartment for rental services he or she can sign up as a client.

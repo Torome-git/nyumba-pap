@@ -37,7 +37,7 @@ function ClientSignUp({ onLogin}) {
                         <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1"/>
                     </div>
-                    <button type="submit" class="btn btn-dark" onClick={() => navigate("/apartmentscontainer")}>SignIn</button>
+                    <button type="submit" class="btn btn-dark" onClick={() => navigate("/landlordscard")}>SignIn</button>
                 </form>
             </div>
         </section>

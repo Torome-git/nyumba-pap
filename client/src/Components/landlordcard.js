@@ -125,7 +125,7 @@ function LandlordsCard({handleApartments, landlord}) {
                         </a>
                     </p>
                 </div>
-                <button type="submit" className="btn btn-danger" onClick={() => (addApartment) }>
+                <button type="button" className="btn btn-danger" onClick={() => (addApartment) }>
                 {added ? "ADDED":"ADD"}
                 </button>
             </form>
